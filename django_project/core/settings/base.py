@@ -94,12 +94,10 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-
 TEMPLATE_DIRS = (
     # project level templates
     absolute_path('core', 'base_templates'),
 )
-
 
 INSTALLED_APPS = (
     'django.contrib.auth',
@@ -108,6 +106,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'suit',
     'django.contrib.admin',
     'django.contrib.syndication',
     'django.contrib.gis',

@@ -10,6 +10,7 @@ admin.autodiscover()
 urlpatterns = patterns(
     '',
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^taxonomy/', include('taxonomy.urls', namespace='taxonomy')),
 )
 
 if settings.DEBUG:
